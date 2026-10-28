@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿
 
 namespace CrmLite.Domain
 {
@@ -14,5 +10,6 @@ namespace CrmLite.Domain
 
         public string? Email { get; set;}
         public DateTime CreatedAt { get; set; } = DateTime.UtcNow;
+        public List<Deal> Deals { get; set; } = new();
     }
 }
